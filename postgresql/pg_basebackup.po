@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-05-10 08:02+0300\n"
-"PO-Revision-Date: 2026-02-07 09:24+0200\n"
+"PO-Revision-Date: 2026-05-10 08:12+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -426,7 +426,7 @@ msgstr "неожиданное состояние при разборе архи
 #: ../../fe_utils/astreamer_tar.c:300
 #, c-format
 msgid "input file does not appear to be a valid tar archive"
-msgstr ""
+msgstr "входной файл не похож на архив tar"
 
 #. +> 18 17 16 15
 #: ../../fe_utils/astreamer_tar.c:307
@@ -438,7 +438,7 @@ msgstr "пустое имя у компонента tar"
 #: ../../fe_utils/astreamer_tar.c:328
 #, c-format
 msgid "pax extensions to tar format are not supported"
-msgstr ""
+msgstr "расширения PAX для формата tar не поддерживаются"
 
 #. +> 18 17 16 15 14 13
 #: ../../fe_utils/astreamer_tar.c:357

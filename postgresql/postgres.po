@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-05-10 08:03+0300\n"
-"PO-Revision-Date: 2026-02-21 05:29+0200\n"
+"PO-Revision-Date: 2026-05-10 08:36+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -32662,7 +32662,7 @@ msgstr "для синхронизации слотов репликации тр
 #. translator: %s is a GUC variable name
 #. +> 18 17
 #: replication/logical/slotsync.c:1180
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker will shut down because \"%s\" is "
 #| "disabled"
@@ -32684,19 +32684,19 @@ msgstr ""
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1223
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker will restart because of a "
 #| "parameter change"
 msgid ""
 "replication slot synchronization will stop because of a parameter change"
 msgstr ""
-"процесс синхронизации слотов репликации будет перезапущен вследствие "
+"процесс синхронизации слотов репликации будет остановлен вследствие "
 "изменения параметров"
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1259
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker is shutting down because "
 #| "promotion is triggered"
@@ -32704,24 +32704,24 @@ msgid ""
 "replication slot synchronization worker will stop because promotion is "
 "triggered"
 msgstr ""
-"процесс синхронизации слотов репликации останавливается, так как вызвана "
+"процесс синхронизации слотов репликации будет остановлен, так как вызвана "
 "процедура повышения сервера"
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1273
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker is shutting down because "
 #| "promotion is triggered"
 msgid ""
 "replication slot synchronization will stop because promotion is triggered"
 msgstr ""
-"процесс синхронизации слотов репликации останавливается, так как вызвана "
-"процедура повышения сервера"
+"синхронизация слотов репликации будет остановлена, так как вызвана процедура "
+"повышения сервера"
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1393
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker is shutting down because "
 #| "promotion is triggered"
@@ -32729,12 +32729,12 @@ msgid ""
 "replication slot synchronization worker will not start because promotion was "
 "triggered"
 msgstr ""
-"процесс синхронизации слотов репликации останавливается, так как вызвана "
+"процесс синхронизации слотов репликации не будет запущен, так как вызвана "
 "процедура повышения сервера"
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1405
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker is shutting down because "
 #| "promotion is triggered"
@@ -32742,8 +32742,8 @@ msgid ""
 "replication slot synchronization will not start because promotion was "
 "triggered"
 msgstr ""
-"процесс синхронизации слотов репликации останавливается, так как вызвана "
-"процедура повышения сервера"
+"синхронизация слотов репликации не будет запущена, так как вызвана процедура "
+"повышения сервера"
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1414
@@ -38734,10 +38734,10 @@ msgstr "аккумулировать массивы различной разм�
 
 #. +> 18 17 16
 #: utils/adt/array_userfuncs.c:1073
-#, fuzzy, c-format
+#, c-format
 #| msgid "array size exceeds the maximum allowed (%d)"
 msgid "array size exceeds the maximum allowed (%zu)"
-msgstr "размер массива превышает предел (%d)"
+msgstr "размер массива превышает предел (%zu)"
 
 #. +> 18 17 16 15 14 13
 #: utils/adt/array_userfuncs.c:1357 utils/adt/array_userfuncs.c:1511

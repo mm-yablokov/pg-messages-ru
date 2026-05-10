@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-05-10 08:02+0300\n"
-"PO-Revision-Date: 2026-02-07 09:21+0200\n"
+"PO-Revision-Date: 2026-05-10 08:53+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1389,10 +1389,10 @@ msgstr "входной файл не похож на архив (возможн�
 
 #. +> 18
 #: pg_backup_archiver.c:2353
-#, fuzzy, c-format
+#, c-format
 #| msgid "input file does not appear to be a valid archive"
 msgid "input file does not appear to be a valid tar archive"
-msgstr "входной файл не похож на архив"
+msgstr "входной файл не похож на архив tar"
 
 #. +> 17 16 15 14 13
 #: pg_backup_archiver.c:2332
@@ -4242,7 +4242,7 @@ msgstr "обнаружена потерянная запись pg_auth_members �
 #: pg_dumpall.c:1127
 #, c-format
 msgid "ignoring role grant for missing role with OID %s"
-msgstr ""
+msgstr "назначение прав для отсутствующей роли с OID %s игнорируется"
 
 #. +> 18 17 16
 #: pg_dumpall.c:1165
@@ -4255,20 +4255,20 @@ msgstr "не удалось найти подходящий порядок вы�
 #: pg_dumpall.c:1191
 #, c-format
 msgid "ignoring role grant to missing role with OID %s"
-msgstr ""
+msgstr "назначение прав отсутствующей роли с OID %s игнорируется"
 
 #. translator: %s represents a numeric role OID
 #. +> 18 17 16
 #: pg_dumpall.c:1206
 #, c-format
 msgid "grant of role \"%s\" to \"%s\" has invalid grantor OID %s"
-msgstr ""
+msgstr "роль \"%s\" назначена \"%s\" с некорректным OID праводателя %s"
 
 #. +> 18 17 16
 #: pg_dumpall.c:1208
 #, c-format
 msgid "This grant will be dumped without GRANTED BY."
-msgstr ""
+msgstr "Это назначение будет выгружено без GRANTED BY."
 
 #. +> 18 17 16 15
 #: pg_dumpall.c:1326
