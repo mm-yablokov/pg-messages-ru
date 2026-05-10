@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-09-13 23:15+0300\n"
+"POT-Creation-Date: 2026-05-10 08:02+0300\n"
 "PO-Revision-Date: 2025-09-13 22:22+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -573,7 +573,7 @@ msgstr "Список проблемных столбцов приведён в �
 #: check.c:431 check.c:1038 check.c:1189 check.c:1272 check.c:1361 check.c:1452
 #: check.c:1584 check.c:1656 check.c:1757 check.c:1804 check.c:1884
 #: check.c:2194 check.c:2213 check.c:2259 check.c:2312 file.c:378 file.c:415
-#: function.c:208 option.c:519 version.c:79 version.c:162
+#: function.c:208 option.c:519 version.c:97 version.c:180
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
@@ -581,7 +581,7 @@ msgstr "не удалось открыть файл \"%s\": %m"
 #. +> 16
 #: check.c:487 check.c:660 check.c:776 check.c:871 check.c:1000 check.c:1077
 #: check.c:1155 check.c:1435 check.c:1509 file.c:339 function.c:163
-#: option.c:476 version.c:116 version.c:292 version.c:426
+#: option.c:476 version.c:116 version.c:323 version.c:457
 #, c-format
 msgid "could not open file \"%s\": %s"
 msgstr "не удалось открыть файл \"%s\": %s"
@@ -589,7 +589,7 @@ msgstr "не удалось открыть файл \"%s\": %s"
 #. +> 15 14 13
 #: check.c:601 check.c:776 check.c:896 check.c:995 check.c:1126 check.c:1205
 #: check.c:1285 check.c:1587 file.c:338 function.c:165 option.c:465
-#: version.c:116 version.c:292 version.c:429
+#: version.c:116 version.c:323 version.c:460
 #, c-format
 msgid "could not open file \"%s\": %s\n"
 msgstr "не удалось открыть файл \"%s\": %s\n"
@@ -1202,7 +1202,7 @@ msgstr "сбой"
 #. +> 15 14 13
 #: check.c:793 check.c:918 check.c:1020 check.c:1146 check.c:1227 check.c:1305
 #: check.c:1365 check.c:1426 check.c:1460 check.c:1491 check.c:1610
-#: function.c:187 version.c:192 version.c:232 version.c:378
+#: function.c:187 version.c:192 version.c:232 version.c:409
 #, c-format
 msgid "fatal\n"
 msgstr "сбой\n"
@@ -1601,7 +1601,7 @@ msgid "Checking for objects affected by Unicode update"
 msgstr "Проверка объектов, затрагиваемых обновлением Unicode"
 
 #. +> 18 17 16 15 14 13
-#: check.c:2038 version.c:121
+#: check.c:2038 version.c:139
 #, c-format
 msgid "warning"
 msgstr "предупреждение"
@@ -1874,7 +1874,7 @@ msgid "The target cluster lacks cluster state information:\n"
 msgstr "В целевом кластере не хватает информации о состоянии кластера:\n"
 
 #. +> 18 17 16 15 14 13
-#: controldata.c:217 dump.c:50 exec.c:118 pg_upgrade.c:606 pg_upgrade.c:646
+#: controldata.c:217 dump.c:54 exec.c:118 pg_upgrade.c:606 pg_upgrade.c:646
 #: pg_upgrade.c:995 relfilenumber.c:610 server.c:34 util.c:337
 #, c-format
 msgid "%s"
@@ -2529,13 +2529,13 @@ msgid "Creating dump of global objects"
 msgstr "Формирование выгрузки глобальных объектов"
 
 #. +> 18 17 16 15
-#: dump.c:32
+#: dump.c:33
 #, c-format
 msgid "Creating dump of database schemas"
 msgstr "Формирование выгрузки схем базы данных"
 
 #. +> 14 13
-#: dump.c:31
+#: dump.c:32
 #, c-format
 msgid "Creating dump of database schemas\n"
 msgstr "Формирование выгрузки схем базы данных\n"
@@ -4069,7 +4069,7 @@ msgid "could not create worker thread: %s\n"
 msgstr "не удалось создать рабочий поток: %s\n"
 
 #. +> 18 17
-#: parallel.c:294 task.c:404
+#: parallel.c:294 task.c:406
 #, c-format
 msgid "%s() failed: %m"
 msgstr "ошибка в %s(): %m"
@@ -4593,25 +4593,25 @@ msgid "connection to database failed: %s"
 msgstr "не удалось подключиться к базе: %s"
 
 #. +> 18 17 16 15 14 13
-#: server.c:39 server.c:143 util.c:248 util.c:278
+#: server.c:39 server.c:145 util.c:248 util.c:278
 #, c-format
 msgid "Failure, exiting\n"
 msgstr "Ошибка, выполняется выход\n"
 
 #. +> 18 17 16
-#: server.c:133
+#: server.c:135
 #, c-format
 msgid "executing: %s"
 msgstr "выполняется: %s"
 
 #. +> 15 14 13
-#: server.c:133
+#: server.c:135
 #, c-format
 msgid "executing: %s\n"
 msgstr "выполняется: %s\n"
 
 #. +> 18 17 16 15 14 13
-#: server.c:139
+#: server.c:141
 #, c-format
 msgid ""
 "SQL command failed\n"
@@ -4623,25 +4623,25 @@ msgstr ""
 "%s"
 
 #. +> 18 17 16
-#: server.c:169
+#: server.c:171
 #, c-format
 msgid "could not open version file \"%s\": %m"
 msgstr "не удалось открыть файл с версией \"%s\": %m"
 
 #. +> 15 14 13
-#: server.c:169
+#: server.c:171
 #, c-format
 msgid "could not open version file \"%s\": %m\n"
 msgstr "не удалось открыть файл с версией \"%s\": %m\n"
 
 #. +> 18 17 16
-#: server.c:173
+#: server.c:175
 #, c-format
 msgid "could not parse version file \"%s\""
 msgstr "не удалось разобрать файл с версией \"%s\""
 
 #. +> 15 14 13
-#: server.c:173
+#: server.c:175
 #, c-format
 msgid "could not parse version file \"%s\"\n"
 msgstr "не удалось разобрать файл с версией \"%s\"\n"
@@ -4657,7 +4657,7 @@ msgstr ""
 "не удалось подключиться к базе: %s"
 
 #. +> 18 17 16 15 14
-#: server.c:299
+#: server.c:301
 #, c-format
 msgid ""
 "\n"
@@ -4667,7 +4667,7 @@ msgstr ""
 "%s"
 
 #. +> 18 17 16
-#: server.c:303
+#: server.c:305
 #, c-format
 msgid ""
 "could not connect to source postmaster started with the command:\n"
@@ -4678,7 +4678,7 @@ msgstr ""
 "%s"
 
 #. +> 15 14 13
-#: server.c:295
+#: server.c:297
 #, c-format
 msgid ""
 "could not connect to source postmaster started with the command:\n"
@@ -4689,7 +4689,7 @@ msgstr ""
 "%s\n"
 
 #. +> 18 17 16
-#: server.c:307
+#: server.c:309
 #, c-format
 msgid ""
 "could not connect to target postmaster started with the command:\n"
@@ -4700,7 +4700,7 @@ msgstr ""
 "%s"
 
 #. +> 15 14 13
-#: server.c:299
+#: server.c:301
 #, c-format
 msgid ""
 "could not connect to target postmaster started with the command:\n"
@@ -4711,7 +4711,7 @@ msgstr ""
 "%s\n"
 
 #. +> 18 17 16
-#: server.c:321
+#: server.c:323
 #, c-format
 msgid "pg_ctl failed to start the source server, or connection failed"
 msgstr ""
@@ -4719,7 +4719,7 @@ msgstr ""
 "подключиться"
 
 #. +> 15 14 13
-#: server.c:313
+#: server.c:315
 #, c-format
 msgid "pg_ctl failed to start the source server, or connection failed\n"
 msgstr ""
@@ -4727,7 +4727,7 @@ msgstr ""
 "подключиться\n"
 
 #. +> 18 17 16
-#: server.c:323
+#: server.c:325
 #, c-format
 msgid "pg_ctl failed to start the target server, or connection failed"
 msgstr ""
@@ -4735,7 +4735,7 @@ msgstr ""
 "подключиться"
 
 #. +> 15 14 13
-#: server.c:315
+#: server.c:317
 #, c-format
 msgid "pg_ctl failed to start the target server, or connection failed\n"
 msgstr ""
@@ -4743,20 +4743,20 @@ msgstr ""
 "подключиться\n"
 
 #. +> 18 17 16
-#: server.c:368 task.c:195
+#: server.c:370 task.c:197
 #, c-format
 msgid "out of memory"
 msgstr "нехватка памяти"
 
 #. +> 18 17 16
-#: server.c:381
+#: server.c:383
 #, c-format
 msgid "libpq environment variable %s has a non-local server value: %s"
 msgstr ""
 "в переменной окружения %s для libpq указан адрес не локального сервера: %s"
 
 #. +> 15 14 13
-#: server.c:373
+#: server.c:375
 #, c-format
 msgid "libpq environment variable %s has a non-local server value: %s\n"
 msgstr ""
@@ -4829,13 +4829,13 @@ msgid "tablespace path \"%s\" is not a directory\n"
 msgstr "путь табличного пространства \"%s\" не указывает на каталог\n"
 
 #. +> 18
-#: task.c:216 task.c:267 task.c:282 task.c:293
+#: task.c:218 task.c:269 task.c:284 task.c:295
 #, c-format
 msgid "connection failure: %s"
 msgstr "ошибка подключения: %s"
 
 #. +> 18
-#: task.c:395
+#: task.c:397
 #, c-format
 msgid "invalid socket"
 msgstr "неверный сокет"
@@ -4877,7 +4877,7 @@ msgid "ok"
 msgstr "ок"
 
 #. +> 18 17 16 15 14 13
-#: version.c:44
+#: version.c:62
 #, c-format
 msgid "Checking for hash indexes"
 msgstr "Проверка хеш-индексов"
@@ -4930,7 +4930,7 @@ msgstr ""
 "\n"
 
 #. +> 18 17 16
-#: version.c:123
+#: version.c:141
 #, c-format
 msgid ""
 "\n"
@@ -4946,7 +4946,7 @@ msgstr ""
 "инструкции по выполнению REINDEX."
 
 #. +> 15 14 13
-#: version.c:337
+#: version.c:368
 #, c-format
 msgid ""
 "\n"
@@ -4964,7 +4964,7 @@ msgstr ""
 "\n"
 
 #. +> 18 17 16
-#: version.c:129
+#: version.c:147
 #, c-format
 msgid ""
 "\n"
@@ -4984,7 +4984,7 @@ msgstr ""
 "индексы; до этого никакие хеш-индексы не будут использоваться."
 
 #. +> 15 14 13
-#: version.c:343
+#: version.c:374
 #, c-format
 msgid ""
 "\n"
@@ -5004,12 +5004,6 @@ msgstr ""
 "будучи выполненным администратором БД в psql, пересоздаст все неправильные\n"
 "индексы; до этого никакие хеш-индексы не будут использоваться.\n"
 "\n"
-
-#. +> 18 17 16 15 14 13
-#: version.c:187
-#, c-format
-msgid "Checking for extension updates"
-msgstr "Проверка обновлённых расширений"
 
 #. +> 16
 #: version.c:193
@@ -5081,13 +5075,19 @@ msgstr ""
 "\n"
 
 #. +> 18 17 16 15 14 13
-#: version.c:201
+#: version.c:205
+#, c-format
+msgid "Checking for extension updates"
+msgstr "Проверка обновлённых расширений"
+
+#. +> 18 17 16 15 14 13
+#: version.c:219
 #, c-format
 msgid "notice"
 msgstr "замечание"
 
 #. +> 18 17 16
-#: version.c:202
+#: version.c:220
 #, c-format
 msgid ""
 "\n"
@@ -5105,7 +5105,7 @@ msgstr ""
 "эти расширения."
 
 #. +> 15 14 13
-#: version.c:456
+#: version.c:487
 #, c-format
 msgid ""
 "\n"
@@ -5186,7 +5186,7 @@ msgstr ""
 "\n"
 
 #. +> 16
-#: version.c:379
+#: version.c:410
 #, c-format
 msgid ""
 "Your installation contains the \"sql_identifier\" data type in user tables.\n"
@@ -5204,7 +5204,7 @@ msgstr ""
 "    %s"
 
 #. +> 15 14
-#: version.c:379
+#: version.c:410
 #, c-format
 msgid ""
 "Your installation contains the \"sql_identifier\" data type in user tables.\n"

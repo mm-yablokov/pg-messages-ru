@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-02-21 05:21+0200\n"
+"POT-Creation-Date: 2026-05-10 08:02+0300\n"
 "PO-Revision-Date: 2026-02-07 09:24+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -52,8 +52,8 @@ msgstr "подсказка: "
 #: ../../common/compression.c:132 ../../common/compression.c:141
 #: ../../common/compression.c:150 ../../fe_utils/astreamer_gzip.c:140
 #: ../../fe_utils/astreamer_gzip.c:273 ../../fe_utils/astreamer_lz4.c:102
-#: ../../fe_utils/astreamer_lz4.c:300 ../../fe_utils/astreamer_zstd.c:133
-#: ../../fe_utils/astreamer_zstd.c:288
+#: ../../fe_utils/astreamer_lz4.c:300 ../../fe_utils/astreamer_zstd.c:130
+#: ../../fe_utils/astreamer_zstd.c:285
 #, c-format
 msgid "this build does not support compression with %s"
 msgstr "эта сборка программы не поддерживает сжатие %s"
@@ -136,7 +136,8 @@ msgstr "не удалось прочитать файл \"%s\" (прочитан
 
 #. +> 18 17 16 15 14 13
 #: ../../common/controldata_utils.c:132 ../../common/controldata_utils.c:280
-#: ../../fe_utils/astreamer_file.c:141 pg_recvlogical.c:653
+#: ../../fe_utils/astreamer_file.c:141 ../../fe_utils/astreamer_file.c:270
+#: pg_recvlogical.c:653
 #, c-format
 msgid "could not close file \"%s\": %m"
 msgstr "не удалось закрыть файл \"%s\": %m"
@@ -273,7 +274,7 @@ msgid "could not get exit code from subprocess: error code %lu"
 msgstr "не удалось получить код выхода от подпроцесса (код ошибки: %lu)"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/astreamer_file.c:96 ../../fe_utils/astreamer_file.c:364
+#: ../../fe_utils/astreamer_file.c:96 ../../fe_utils/astreamer_file.c:366
 #: ../../fe_utils/recovery_gen.c:153 pg_basebackup.c:1498 pg_basebackup.c:1707
 #, c-format
 msgid "could not create file \"%s\": %m"
@@ -287,32 +288,32 @@ msgid "could not write to file \"%s\": %m"
 msgstr "не удалось записать в файл \"%s\": %m"
 
 #. +> 18 17 16 15
-#: ../../fe_utils/astreamer_file.c:278
+#: ../../fe_utils/astreamer_file.c:280
 #, c-format
 msgid "unexpected state while extracting archive"
 msgstr "неожиданное состояние при извлечении архива"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/astreamer_file.c:324 pg_basebackup.c:699 pg_basebackup.c:713
+#: ../../fe_utils/astreamer_file.c:326 pg_basebackup.c:699 pg_basebackup.c:713
 #: pg_basebackup.c:758
 #, c-format
 msgid "could not create directory \"%s\": %m"
 msgstr "не удалось создать каталог \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/astreamer_file.c:329
+#: ../../fe_utils/astreamer_file.c:331
 #, c-format
 msgid "could not set permissions on directory \"%s\": %m"
 msgstr "не удалось установить права для каталога \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/astreamer_file.c:348
+#: ../../fe_utils/astreamer_file.c:350
 #, c-format
 msgid "could not create symbolic link from \"%s\" to \"%s\": %m"
 msgstr "не удалось создать символическую ссылку \"%s\" в \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/astreamer_file.c:368
+#: ../../fe_utils/astreamer_file.c:370
 #, c-format
 msgid "could not set permissions on file \"%s\": %m"
 msgstr "не удалось установить права доступа для файла \"%s\": %m"
@@ -367,7 +368,7 @@ msgstr "не удалось инициализировать библиотек�
 
 #. +> 18 17 16 15
 #: ../../fe_utils/astreamer_gzip.c:320 ../../fe_utils/astreamer_lz4.c:356
-#: ../../fe_utils/astreamer_zstd.c:333
+#: ../../fe_utils/astreamer_zstd.c:330
 #, c-format
 msgid "could not decompress data: %s"
 msgstr "не удалось распаковать данные: %s"
@@ -385,8 +386,8 @@ msgid "could not write lz4 header: %s"
 msgstr "не удалось записать заголовок lz4: %s"
 
 #. +> 18 17 16 15
-#: ../../fe_utils/astreamer_lz4.c:191 ../../fe_utils/astreamer_zstd.c:185
-#: ../../fe_utils/astreamer_zstd.c:227
+#: ../../fe_utils/astreamer_lz4.c:191 ../../fe_utils/astreamer_zstd.c:182
+#: ../../fe_utils/astreamer_zstd.c:224
 #, c-format
 msgid "could not compress data: %s"
 msgstr "не удалось сжать данные: %s"
@@ -409,26 +410,38 @@ msgstr "эта сборка программы не поддерживает с�
 msgid "could not initialize compression library: %s"
 msgstr "не удалось инициализировать библиотеку сжатия: %s"
 
-#. +> 18 17 16 15
-#: ../../fe_utils/astreamer_tar.c:244
+#. +> 17 16 15
+#: bbstreamer_tar.c:245
 #, c-format
 msgid "tar file trailer exceeds 2 blocks"
 msgstr "окончание файла tar занимает больше 2 блоков"
 
 #. +> 18 17 16 15
-#: ../../fe_utils/astreamer_tar.c:249
+#: ../../fe_utils/astreamer_tar.c:254
 #, c-format
 msgid "unexpected state while parsing tar archive"
 msgstr "неожиданное состояние при разборе архива tar"
 
+#. +> 18
+#: ../../fe_utils/astreamer_tar.c:300
+#, c-format
+msgid "input file does not appear to be a valid tar archive"
+msgstr ""
+
 #. +> 18 17 16 15
-#: ../../fe_utils/astreamer_tar.c:292
+#: ../../fe_utils/astreamer_tar.c:307
 #, c-format
 msgid "tar member has empty name"
 msgstr "пустое имя у компонента tar"
 
+#. +> 18
+#: ../../fe_utils/astreamer_tar.c:328
+#, c-format
+msgid "pax extensions to tar format are not supported"
+msgstr ""
+
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/astreamer_tar.c:326
+#: ../../fe_utils/astreamer_tar.c:357
 #, c-format
 msgid "COPY stream ended before last file was finished"
 msgstr "поток COPY закончился до завершения последнего файла"
@@ -458,13 +471,13 @@ msgid "could not set compression worker count to %d: %s"
 msgstr "не удалось установить число потоков сжатия %d: %s"
 
 #. +> 18 17 16
-#: ../../fe_utils/astreamer_zstd.c:120
+#: ../../fe_utils/astreamer_zstd.c:119
 #, c-format
 msgid "could not enable long-distance mode: %s"
 msgstr "не удалось включить режим большой дистанции: %s"
 
 #. +> 18 17 16 15
-#: ../../fe_utils/astreamer_zstd.c:279
+#: ../../fe_utils/astreamer_zstd.c:276
 #, c-format
 msgid "could not create zstd decompression context"
 msgstr "не удалось создать контекст распаковки zstd"

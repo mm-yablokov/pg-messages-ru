@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_test_timing (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2026-05-10 08:02+0300\n"
 "PO-Revision-Date: 2024-09-04 19:59+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -92,8 +92,15 @@ msgstr[2] "Оценка издержек замеров времени в теч
 msgid "Detected clock going backwards in time.\n"
 msgstr "Обнаружен обратный ход часов.\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: pg_test_timing.c:152
+#, fuzzy, c-format
+#| msgid "Time warp: %d ms\n"
+msgid "Time warp: %d us\n"
+msgstr "Сдвиг времени: %d мс\n"
+
+#. +> 13
+#: pg_test_timing.c:141
 #, c-format
 msgid "Time warp: %d ms\n"
 msgstr "Сдвиг времени: %d мс\n"
